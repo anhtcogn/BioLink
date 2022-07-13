@@ -12,11 +12,21 @@ public class DesignEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String name;
+
     private String background;
 
-    private String radius;
+    @Column(name = "btn_radius")
+    private String btnRadius;
 
-    private String bg;
+    @Column(name = "btn_bg")
+    private String btnBg;
 
-    private String border;
+    @Column(name = "btn_border")
+    private String btnBorder;
+
+    @Column(name = "box_shadoe")
+    private String boxShadow;
+
+    private String color;
 }
